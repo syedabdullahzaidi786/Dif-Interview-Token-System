@@ -1,0 +1,193 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8f7;
+    color: #333;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7faf7;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c4d35;
+}
+
+.token-display {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d6a4f;
+    text-align: center;
+}
+
+.token-slip-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.token-slip-buttons button {
+    margin: 10px 0;
+}
+
+/* Token Slip Style */
+.token-slip {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.token-slip img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.token-slip h2 {
+    font-size: 20px;
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+.token-slip p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.token-slip .details {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the printable slip */
+/* Styling for the printable slip */
+.print-slip-content {
+    font-family: 'Arial', sans-serif;
+    width: 200px;  /* Smaller size for the token slip */
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.print-slip-content img {
+    width: 80px;  /* Smaller logo size */
+    margin-bottom: 10px;
+}
+
+.print-slip-content h3 {
+    font-size: 16px;  /* Smaller heading font size */
+    color: #2d6a4f;
+}
+
+.print-slip-content p {
+    font-size: 12px;  /* Smaller paragraph font size */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .print-slip-content {
+        width: 200px;  /* Set the width for printing */
+        padding: 15px;
+        border: 2px dashed #2d6a4f;  /* Change border style to dashed for printing */
+    }
+
+    .print-slip-content img {
+        width: 70px;  /* Adjust logo size for print */
+        margin-bottom: 5px;
+    }
+
+    .print-slip-content h3 {
+        font-size: 18px;  /* Adjust heading size for print */
+    }
+
+    .print-slip-content p {
+        font-size: 12px;  /* Adjust text size for print */
+    }
+
+    /* Optional: remove margins and padding when printing */
+    .container, header, .form-container, .token-display {
+        display: none;
+    }
+}
+

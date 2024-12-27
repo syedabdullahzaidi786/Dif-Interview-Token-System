@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DIF-Interview Token Number System</title>
+    <link rel="icon" type="image/x-icon" href="logo.webp">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="logo.webp" alt="Logo" class="logo">
+            </div>
+            <h1>Interview Token Number System</h1>
+        </header>
+        <div class="form-container">
+            <div class="form-field">
+                <label for="name">Enter Student Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-field">
+                <label for="bform">Student B-Form Number</label>
+                <input type="text" id="bform" placeholder="Student B-Form Number">
+            </div>
+            <button id="generate-token">Get Token</button>
+            <div id="token-display" class="token-display">
+                <!-- Token number will be displayed here -->
+            </div>
+            <div id="token-slip-preview" style="display:none; margin-top: 20px;">
+                <div class="print-slip-content" id="preview-slip">
+                    <img src="logo.png" alt="Logo">
+                    <h3>Token Slip</h3>
+                    <p><strong>Token Number:</strong> <span id="preview-token-number">123</span></p>
+                    <p><strong>Name:</strong> <span id="preview-name">John Doe</span></p>
+                    <p><strong>B-Form Number:</strong> <span id="preview-bform">12345</span></p>
+                    <p><strong>Date:</strong> <span id="preview-date">2024-12-27</span></p>
+                    <p><strong>Time:</strong> <span id="preview-time">10:30 AM</span></p>
+                </div>
+                <!-- <button id="download-slip">Download Token Slip</button>
+                <button id="print-preview-btn" style="margin-top: 15px;">Print Token Slip</button> -->
+            </div>
+            
+            <div id="token-slip-buttons" class="token-slip-buttons" style="display:none;">
+                <button id="download-slip">Download Token Slip</button>
+                <button id="print-slip">Print Token Slip</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
