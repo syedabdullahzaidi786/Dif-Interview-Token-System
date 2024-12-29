@@ -45,6 +45,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Token Management Dashboard</title>
+    <link rel="icon" type="webp" href="logo.webp">
     <style>
     body {
         font-family: 'Arial', sans-serif;

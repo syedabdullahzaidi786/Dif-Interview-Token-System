@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $lastToken = getLastToken($conn);
     $newToken = $lastToken + 1;
 
-    if ($newToken > 70) {
+    if ($newToken > 100) {
         echo json_encode(["status" => "error", "message" => "All token numbers have been assigned."]);
         exit;
     }
